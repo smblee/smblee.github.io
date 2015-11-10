@@ -1,0 +1,607 @@
+@charset "utf-8";
+
+/* Glinbi IT Bom Visual ARS - by Bryan Seungmin Lee - AUG 01, 2015 */
+
+html, body {
+    height: 50%; width: 100%; top: 50%; max-width: 414px;
+    background-size: 100% auto;
+    margin: 0 auto !important;
+
+}
+
+body {
+    background: url('../img/pattern.png') repeat;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../img/preloader.gif') center no-repeat #fff;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, section, summary, time, mark, audio, video, input, textarea, select, button {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+article, aside, dialog, figure, footer, header, hgroup, nav, section, main {
+    display: block;
+}
+
+body, input, textarea, select, button {
+    font-family: 'Apple SD Gothic Neo', Apple-Gothic, DroidSansFallback, sans-serif;
+}
+
+input, button, textarea, select {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border: 0;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+
+img, fieldset {
+    border: 0;
+}
+
+img {
+    vertical-align: top;
+}
+
+ol, ul, dl {
+    list-style: none;
+}
+
+
+
+.app-lst {
+    display: block;
+    height: 100vh;
+    /*max-width: 360px;*/
+    /*max-height: 640px;*/
+    min-height: 370px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.app-lst li {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Heights */
+[class^="row-"]{
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+[class^="item-"]{
+    height: 100%;
+}
+
+.row-1 {
+    -webkit-animation: load 0.5s 0.3s ;
+    animation: load 0.5s 0.3s;
+    height: 17%;
+}
+.row-2 {
+    -webkit-animation: load 0.5s 0.4s ;
+    animation: load 0.5s 0.4s;
+    height: 13%;
+}
+.row-3 {
+    -webkit-animation: load 0.5s ;
+    animation: load 0.5s;
+    height: 35%;
+    overflow: hidden;
+
+}
+.row-4 {
+    -webkit-animation: load 0.5s 0.1s ;
+    animation: load 0.5s 0.1s;
+    height: 20%;
+}
+.row-5 {
+    -webkit-animation: load 0.5s 0.2s;
+    animation: load 0.5s 0.2s;
+    height: 15%;
+    overflow: hidden;
+}
+
+
+.row-3 .subitem-7 {
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    left: 100%;
+}
+
+.row-3 .subitem-7 div {
+    width: 100%;
+    height: 100%;
+    background-color: #33C3BD;
+}
+
+.subitem-7.opened {
+    display: inline-block !important;
+}
+
+.subitem-9.opened {
+    display: inline-block !important;
+}
+
+.subitem-11.opened {
+    display: inline-block !important;
+}
+
+.row-3.opened {
+    left:-85%;
+}
+
+.subitem-9 {
+    left: 28%;
+    background: #FF472C;
+    width: 0;
+    position: absolute !important;
+}
+
+.subitem-11 {
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #6B6667;
+    position: absolute !important;
+}
+
+
+/**** Each items ****/
+.item-1 {
+    width: 90%;
+}
+
+.item-1 a{
+    background-color: #33C8BD;
+
+}
+/*.item-1 a .logo-img{
+    height: 68%;
+    overflow: auto;
+    position: absolute;
+    right: 50%;
+    float: left;
+    margin: auto;
+    top: 0; left: 0; bottom: 0;
+}*/
+
+.item-1 a .logo-text-img{
+    width: 80%;
+    overflow: auto;
+    position: absolute;
+    margin: auto;
+    top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.run-flip-animation {
+    animation: pullUp 1s 0s !important;
+    -webkit-animation: pullUp 1s 0s !important ;
+}
+
+/*empty bar*/
+.item-2 {
+    width: 10%;
+}
+
+.item-2 a{
+    background-color: #6B6667;
+}
+
+
+/*mute*/
+.item-3 {
+    width: 55%;
+}
+
+.item-3 a{
+    background-color: #0C8482;
+    transition: all .1s linear;
+}
+
+.item-3 a img{
+    height: 65%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+/*red icon*/
+.item-4 {
+    width: 35%;
+}
+
+.item-4 a{
+    background-color: #FF472C;
+
+}
+
+.item-4 a img{
+    width: 40%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+/* */
+.item-5 {
+    width: 10%;
+}
+.item-5 a{
+    background-color: #6B6667;
+}
+
+/* */
+.item-6 {
+    width: 65%;
+    overflow: hidden;
+}
+.item-6 a{
+    background-color: #FFC331;
+}
+
+@-webkit-keyframes zoomin {
+    0% {
+        transform: scale(0.1);
+        opacity: 0.5;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes load {
+
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes pullUp {
+    0% {
+        transform: scaleY(0.1);
+    }
+    40% {
+        transform: scaleY(1.02);
+    }
+    60% {
+        transform: scaleY(0.98);
+    }
+    80% {
+        transform: scaleY(1.01);
+    }
+    100% {
+        transform: scaleY(0.98);
+    }
+    80% {
+        transform: scaleY(1.01);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@-webkit-keyframes pullUp {
+    0% {
+        -webkit-transform: scaleY(0.1);
+    }
+    40% {
+        -webkit-transform: scaleY(1.02);
+    }
+    60% {
+        -webkit-transform: scaleY(0.98);
+    }
+    80% {
+        -webkit-transform: scaleY(1.01);
+    }
+    100% {
+        -webkit-transform: scaleY(0.98);
+    }
+    80% {
+        -webkit-transform: scaleY(1.01);
+    }
+    100% {
+        -webkit-transform: scaleY(1);
+    }
+}
+
+.item-6 a img{
+    width: 70%;
+    max-height: 70%;
+    max-width: 70%;
+    height: auto;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+/* */
+.item-7 {
+    width: 35%;
+    left:0;
+}
+.item-7 a{
+    background-color: #33C8BD;
+}
+
+.item-7 .sub{
+    right:200px;
+    background-color: #33C8BD;
+}
+
+.item-7 a .remote-logo{
+    width: 90%;
+    max-height: 70%;
+    max-width: 70%;
+    height: auto;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 63%; left: 0; bottom: 0; right: 0;
+}
+
+.item-7 a .remote-text{
+    width: 60%;
+    max-height: 50%;
+    max-width: 70%;
+    height: auto;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+/* */
+.item-8 {
+    width: 8%;
+}
+.item-8 a{
+    background-color: #6B6667;
+}
+
+/* Others */
+.item-9 {
+    width: 28%;
+    z-index: 10;
+}
+.item-9 a{
+    background-color: #FF472C;
+
+}
+
+.item-9 a .other-img{
+    width: 40%;
+    height: auto;
+    max-height: 40%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 20%; right: 0;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.item-9 a .other-text{
+    width: 70%;
+    height: auto;
+    max-height: 70%;
+    max-width: 70%;
+    overflow: auto;
+    margin: auto;
+    margin-bottom: 20%;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+
+/* */
+.item-10 {
+    width: 64%;
+}
+.item-10 a{
+    background-color: #0C8482;
+}
+
+.item-10 a .drone-text{
+    width: 45%;
+    height: auto;
+    max-height: 60%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+/* */
+.item-11 {
+    left: 0;
+    width: 92%;
+}
+.item-11 a{
+    background-color: #FFC331;
+
+}
+
+.item-11 a .techsupport-icon{
+    width: 15%;
+    height: auto;
+    max-height: 60%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 65%;
+}
+
+.item-11 a .techsupport-text{
+    width: 60%;
+    height: auto;
+    max-height: 100%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0%; left: 20%; bottom: 0%; right: 0;
+}
+
+.item-12 {
+    width: 8%;
+}
+.item-12 a{
+    background-color: #6B6667;
+}
+
+
+
+/******************************/
+/**********ANIMATIONS**********/
+/******************************/
+
+/*3,4 click */
+.item-3 a:active {
+    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    background: #0e9f9d;
+    border: solid 1px #203E5F;
+}
+
+.activated {
+    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    background: #ff634d !important;
+    border: solid 1px #203E5F;
+}
+
+.rotated {
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg); /* Firefox */
+    -webkit-transform: rotate(45deg); /* Safari and Chrome */
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+
+
+/********** ARROWS **********/
+
+/* 7,10,11 click */
+
+
+/*common things for arrow icons about arrow icons*/
+
+.icon { height: 17px; width: 17px; overflow: hidden;  }
+
+.closed {
+    transform: rotate(0deg);
+
+    /*transform: rotate(180deg);*/
+    transition: .3s;
+}
+.icon.opened {
+    transform: rotate(180deg);
+    transition: .3s;
+}
+
+/*arrow point left (7)*/
+
+.item-7 .icon {
+    position: absolute;
+    top: 45%;
+    right: 8%;
+    overflow: hidden;
+    opacity: 0.2;
+}
+
+.item-7 .arrow-img {
+    transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+}
+
+/*arrow point down (10)*/
+.item-10 .icon {
+    position: absolute;
+    bottom: 13%;
+    right: 45%;
+    overflow: hidden;
+}
+
+.item-10 .arrow-img {
+    transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+/*arrow point down (11)*/
+.item-11 .icon {
+    position: absolute;
+    top: 45%;
+    left: 3%;
+    overflow: hidden;
+    opacity: 0.2;
+}
+
+.app-lst div li {
+    position: relative;
+}
+
+.app-lst li div img {
+    width: 100%;
+    height: 100%;
+}
+
+.app-lst div li a{
+    width: 100%;
+    height: 100%;
+    display:inline-block;
+    text-decoration: none;
+    position: relative;
+}
+
+.app-lst li a span{
+    position: absolute;
+    font-size: 20px;
+    color: rgba(0,0,0,0.2);
+    display: none;
+}
